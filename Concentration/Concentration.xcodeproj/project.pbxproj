@@ -56,15 +56,23 @@
 		62368CAB2ABC986200EBD391 /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
-				62368CAC2ABC986200EBD391 /* AppDelegate.swift */,
-				62368CAE2ABC986200EBD391 /* SceneDelegate.swift */,
+				62C1661B2ABCB792000F1705 /* SideFiles */,
 				62368CB02ABC986200EBD391 /* ViewController.swift */,
 				62368CB22ABC986200EBD391 /* Main.storyboard */,
-				62368CB52ABC986300EBD391 /* Assets.xcassets */,
-				62368CB72ABC986300EBD391 /* LaunchScreen.storyboard */,
 				62368CBA2ABC986300EBD391 /* Info.plist */,
 			);
 			path = Concentration;
+			sourceTree = "<group>";
+		};
+		62C1661B2ABCB792000F1705 /* SideFiles */ = {
+			isa = PBXGroup;
+			children = (
+				62368CAC2ABC986200EBD391 /* AppDelegate.swift */,
+				62368CAE2ABC986200EBD391 /* SceneDelegate.swift */,
+				62368CB52ABC986300EBD391 /* Assets.xcassets */,
+				62368CB72ABC986300EBD391 /* LaunchScreen.storyboard */,
+			);
+			path = SideFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
