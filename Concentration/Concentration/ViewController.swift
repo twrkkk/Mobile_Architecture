@@ -10,8 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var flipCount = 0{
+        didSet{
+            FlipCountLabel.text = "Flips: \(flipCount)"
+        }
+    }
+    @IBOutlet var cardButtons: [UIButton]!
+    
+    @IBOutlet weak var FlipCountLabel: UILabel!
+    
+    var emojiChoices = ["🍒", "🍉", "🍌","🍒", "🍉", "🍌"]
+    
     @IBAction func TouchCard(_ sender: UIButton) {
-        FlipCard(withEmoji: "🍒", on: sender)
+        flipCount+=1
+        if let cardNumber = cardButtons.lastIndex(of: sender){
+             FlipCard(withEmoji: emojiChoices[cardNumber], on: sender)
+        } else{
+            print("choosen card was not int array")
+        }
+       
     }
     
     func FlipCard(withEmoji emoji: String, on button: UIButton){
